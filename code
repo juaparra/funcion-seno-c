@@ -8,6 +8,7 @@ long double taylor (double x, int max);
 int main(int argc, char **argv)
 {
   double x {0.0};
+  int nterms = 10;
 
   if(argc != 1) {
     std::cerr << "ERROR.\nUsage:\n" << argv[0] << "\n";
@@ -32,15 +33,7 @@ int main(int argc, char **argv)
 }
 
 
-int main(){
-    double x = 5;
-    int nterms = 10;
 
-    double exact = std::sin(x);
-    double myval = mysin(x, nterms);
-   
-    return 0;
-}
 ///////////////////////////taylor ajustado////////////////////////////////////////////////
 double mysin(double x, int nterms){
     double total = 0.0;
